@@ -9,7 +9,8 @@ from .views import (
         LecturerListView, StudentListView, 
         staff_add_view, edit_staff, 
         delete_staff, student_add_view, 
-        edit_student, delete_student, ParentAdd, validate_username, register
+        edit_student, delete_student, ParentAdd, validate_username, register,
+        profile_update,
     )
 from .forms import EmailValidationOnForgotPassword
 

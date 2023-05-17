@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div id="input-nav"><a href="{% url 'home' %}" class="primary1">Home</a> <i>&rsaquo;</i> Progress Page</div>
+<div id="input-nav"><a href="{% url 'home' %}" class="primary1">Bosh sahifa</a> <i>&rsaquo;</i> Progress Page</div>
 
   {% if cat_scores %}
 
@@ -17,9 +17,9 @@
 
 	<thead>
 	  <tr>
-		<th>{% trans "Category" %}</th>
-		<th>{% trans "Correctly answererd" %}</th>
-		<th>{% trans "Incorrect" %}</th>
+		<th>{% trans "Kategoriya" %}</th>
+		<th>{% trans "To'g'ri javoblar" %}</th>
+		<th>{% trans "Noto'g'ri javoblar" %}</th>
 		<th>%</th>
 	  </tr>
 	</thead>
@@ -52,16 +52,16 @@
   <p class="lead text-muted">
 	{% trans "Below are the results of exams that you have sat." %}
   </p>
-  <div class="info-text bg-danger mb-2">Total complete exams: {{ exams_counter }}</div>
+  <div class="info-text bg-danger mb-2">Umumiy natijalar: {{ exams_counter }}</div>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
 
 	<thead>
 	  <tr>
 		<th>#</th>
-		<th>{% trans "Quiz Title" %}</th>
-		<th>{% trans "Score" %}</th>
-		<th>{% trans "Possible Score" %}</th>
+		<th>{% trans "Quiz sarlavhasi" %}</th>
+		<th>{% trans "Ball" %}</th>
+		<th>{% trans "Umumiy ball" %}</th>
 		<th>Out of 100%</th>
 	  </tr>
 	</thead>

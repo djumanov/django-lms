@@ -3,13 +3,13 @@
 
 {% block content %}
 
-<div id="input-nav"><a href="{% url 'home' %}" class="primary1">Home</a> <i>&rsaquo;</i> Session list</div>
+<div id="input-nav"><a href="{% url 'home' %}" class="primary1">Bosh sahifa</a> <i>&rsaquo;</i> Session list</div>
 
 {% if request.user.is_superuser %}
-<a class="add-button" href="{% url 'add_session' %}"><i class="fas fa-plus"></i>Add New Session</a>
+<a class="add-button" href="{% url 'add_session' %}"><i class="fas fa-plus"></i>Sessiya qo'shish</a>
 {% endif %}
 
-<div class="title-1"><i class="fas fa-calendar-week"></i>Session List</div>
+<div class="title-1"><i class="fas fa-calendar-week"></i>Sessiyalar</div>
 <div class="title-line"></div>
 
 {% if messages %}
